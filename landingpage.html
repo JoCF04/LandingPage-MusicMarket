@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página con Menú</title>
+
+    <!-- Estilos de tu landing -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Estilos del menú hamburguesa -->
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">MUSIC MARKET</h1>
+      <nav>
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+        <!-- MENÚ HORIZONTAL (OJO: clase Menu-Horizontal) -->
+        <ul class="Menu-Horizontal">
+          <li><a href="#seccion1">Inicio</a></li>
+          <li><a href="#">Catalogo</a></li>
+          <li>
+            <a href="#">Ofertas🔻</a>
+            <ul class="menu-vertical">
+              <li><a href="#">Descuentos</a></li>
+              <li><a href="#">Preventas</a></li>
+            </ul>
+          </li>
+          <li><a href="#section-inscription">Contacto</a></li>
+          <li><a href="#">Carrito🛒</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="video" id="seccion1">
+        <div class="content">
+          <div class="text-video">
+            <h2>Ibanez PIA3761 – Made in Japan (Stallion White)</h2>
+            <p class="subtitulo">
+              La Ibanez PIA3761 es una obra maestra del diseño y la ingeniería
+              japonesa, creada con la precisión y elegancia que caracteriza a la
+              serie signature de Steve Vai. Esta guitarra combina una estética
+              impresionante con una calidad de sonido y una comodidad
+              excepcionales, ideal para guitarristas que buscan rendimiento
+              profesional y un estilo inconfundible.
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/KzF7C_Uncsw?list=RDKzF7C_Uncsw&start_radio=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="Container_SN">
+          <ul class="Banner_SN">
+            <li>
+              <img src="img/icons8-facebook-48.png" width="32" height="32" />
+              <p>
+                <a href="#" target="_blank">Síguenos en<br />Facebook!</a>
+              </p>
+            </li>
+            <li>
+              <img src="img/icons8-instagram-48.png" width="32" height="32" />
+              <p>
+                <a href="#" target="_blank">Síguenos en<br />Instagram!</a>
+              </p>
+            </li>
+            <li>
+              <img src="img/icons8-x-48.png" width="32" height="32" />
+              <p>
+                <a href="#" target="_blank">Síguenos en<br />X!</a>
+              </p>
+            </li>
+            <li>
+              <img src="img/icons8-tik-tok-48 (1).png" width="32" height="32" />
+              <p>
+                <a href="#" target="_blank">Síguenos en<br />Tiktok!</a>
+              </p>
+            </li>
+            <li>
+              <img src="img/icons8-youtube-48 (1).png" width="32" height="32" />
+              <p>
+                <a href="#" target="_blank">Síguenos en<br />Youtube!</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div id="section-inscription" class="container-section">
+          <form name="frm" method="post" action="">
+            <fieldset id="form">
+              <legend>Formulario de contacto</legend>
+              <ul>
+                <li>
+                  <label>Nombres: </label>
+                  <input type="text" name="frm_surname" size="30" />
+                </li>
+                <li>
+                  <label>Apellidos: </label>
+                  <input type="text" name="frm_fullname" size="30" />
+                </li>
+                <li>
+                  <label>Sexo: </label>
+                  <input type="radio" name="frm_sex" value="Hombre" />Hombre
+                  <input type="radio" name="frm_sex" value="Mujer" />Mujer
+                </li>
+                <li>
+                  <label>Celular: </label>
+                  <input type="text" name="frm_phone" size="30" />
+                </li>
+                <li>
+                  <label>E-mail: </label>
+                  <input type="text" name="frm_email" size="30" />
+                </li>
+                <li>
+                  <label>Escoge tu tema de interés: </label>
+                  <select>
+                    <option>Selecciona una opción</option>
+                    <option>Ser más productivo</option>
+                    <option>Aprende a controlar tu dinero</option>
+                    <option>Cómo dormir mejor</option>
+                  </select>
+                </li>
+              </ul>
+              <p>
+                <input type="submit" class="btn-contact_form" value="Enviar" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Sobre Music Market</h3>
+          <ul>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Calidad y Garantía</a></li>
+            <li><a href="#">Marcas Asociadas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Categorías Principales</h3>
+          <ul>
+            <li><a href="#">Guitarras Eléctricas</a></li>
+            <li><a href="#">Bajos</a></li>
+            <li><a href="#">Amplificadores</a></li>
+            <li><a href="#">Pedales y Efectos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Atención al Cliente</h3>
+          <ul>
+            <li><a href="#">Envíos y Entregas</a></li>
+            <li><a href="#">Cambios y Devoluciones</a></li>
+            <li><a href="#">Soporte Técnico</a></li>
+            <li><a href="#">Garantías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="#">📍 Av. Rock & Roll 123, Lima - Perú</a></li>
+            <li><a href="#">📞 +51 999 555 444</a></li>
+            <li><a href="#">✉️ contacto@musicmarket.pe</a></li>
+            <li><a href="#">🕒 Lun - Sáb: 9:00am - 8:00pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        © 2024 Music Market. Todos los derechos reservados. Inspirando a los
+        músicos de hoy y mañana. 🎶
+      </p>
+    </footer>
+
+    <!-- JS del menú hamburguesa -->
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

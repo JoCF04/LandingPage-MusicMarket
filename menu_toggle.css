@@ -1,0 +1,84 @@
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio al borde derecho */
+  color: white; /* Ícono visible en desktop */
+}
+
+/* ===========================
+   RESPONSIVE - MÓVILES
+=========================== */
+@media (max-width: 768px) {
+  /* Mostrar botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    color: white; /* Aseguramos que sea visible */
+  }
+
+  /* Ocultar menú horizontal por defecto */
+  .Menu-Horizontal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white; /* Fondo blanco para móvil */
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  /* Al activarse, mostrar menú */
+  .Menu-Horizontal.active {
+    display: flex;
+  }
+
+  /* Estilo de los ítems del menú */
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+
+  /* ESTILOS IMPORTANTES:
+     Hacemos visible el texto del menú */
+  .Menu-Horizontal a {
+    color: black; /* Texto visible */
+    background-color: white; /* Fondo blanco */
+    padding: 15px;
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .Menu-Horizontal a:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Submenú vertical */
+  .menu-vertical {
+    background-color: white;
+    position: static;
+    display: none;
+    width: 100%;
+  }
+
+  .menu-vertical li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-vertical a {
+    color: black !important;
+    background-color: white;
+    padding-left: 30px; /* Sangría para submenú */
+  }
+
+  /* Mostrar submenú al tocar */
+  .Menu-Horizontal li:hover .menu-vertical {
+    display: block;
+  }
+}

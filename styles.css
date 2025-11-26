@@ -1,0 +1,304 @@
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   HEADER Y MENÚ
+=========================== */
+header {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+/* AHORA SE USA Menu-Horizontal (para que funcione con menú hamburguesa) */
+.Menu-Horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Menu-Horizontal > li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.Menu-Horizontal a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.Menu-Horizontal a:hover {
+  background-color: #555;
+}
+
+/* SUBMENÚ */
+.menu-vertical {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #333;
+}
+
+.menu-vertical li {
+  width: 150px;
+}
+
+.menu-vertical a {
+  padding: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-vertical a:hover {
+  background-color: #555;
+}
+
+.Menu-Horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+/* ===========================
+   CONTENIDO PRINCIPAL
+=========================== */
+main {
+  padding: 20px;
+}
+
+.video .content {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.text-video {
+  margin-bottom: 20px;
+}
+
+.text-video h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* ===========================
+   FORMULARIO
+=========================== */
+.form-section {
+  background-color: #555;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.container-section {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+form ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
+}
+
+form input[type="text"],
+form select {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid firebrick;
+}
+
+.btn-contact_form:hover {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffdd00;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-section ul li a:hover {
+  color: #ffdd00;
+}
+
+footer p {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+  color: #bbb;
+}
+
+.Container_SN {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+
+.Banner_SN li {
+  list-style-type: none;
+  opacity: 1;
+  color: blue;
+  height: 43px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.Banner_SN li:hover {
+  margin-left: -70px;
+}
+
+.Banner_SN li img {
+  float: left;
+  margin: 5px 5px;
+  margin-right: 5px;
+}
+
+.Banner_SN li p {
+  padding-top: 5px;
+  margin: 0;
+  line-height: 16px;
+  font-size: 10px;
+}
+
+.Banner_SN li p a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* ===========================
+   RESPONSIVE DEL FORMULARIO
+=========================== */
+@media (max-width: 768px) {
+  .container-section {
+    width: 90%;
+  }
+
+  form label {
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  form input[type="text"],
+  form select {
+    width: 100%;
+    margin-left: 0;
+  }
+}
